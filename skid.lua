@@ -1,6 +1,6 @@
 
 local settings = {
-  ["message"] = "ping"
+  ["message"] = "gg/WqUF3JN4rR | aquoric 6635 was here!! 🤓 | vouch"
 }
 
 local queueTp = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport or function() end
