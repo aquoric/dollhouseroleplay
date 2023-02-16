@@ -9,7 +9,7 @@ local queueTp = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and
 repeat wait() until game:IsLoaded()
 
 spawn(function()
-    while wait(1) do
+    while wait(3) do
         game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(settings.message ,"all")
     end
 end)
