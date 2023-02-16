@@ -1,6 +1,6 @@
 
 local settings = {
-  ["message"] = "gg/WqUF3JN4rR | aquoric 0001 was here!! :nerd:| vouch"
+  ["message"] = "ping"
 }
 
 local queueTp = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport or function() end
@@ -9,7 +9,7 @@ local queueTp = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and
 repeat wait() until game:IsLoaded()
 
 spawn(function()
-    while wait(0.4) do
+    while wait(1) do
         game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(settings.message ,"all")
     end
 end)
@@ -64,7 +64,7 @@ wait(10)
 
 -- join new game
 
-queueTp("loadstring(game:HttpGet('https://raw.githubusercontent.com/aquoric/dollhouseroleplay/skid.lua'))()")
+queueTp("loadstring(game:HttpGet('https://raw.githubusercontent.com/aquoric/dollhouseroleplay/main/skid.lua'))()")
 
 while wait() do
    local x = {}
